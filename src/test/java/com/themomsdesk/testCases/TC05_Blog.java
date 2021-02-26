@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import com.themomsdesk.pageObjects.BlogPage;
 import com.themomsdesk.pageObjects.BlogPage01;
 import com.themomsdesk.pageObjects.HomePage;
+import com.themomsdesk.pageObjects.PostComment;
 
 public class TC05_Blog extends BaseClass 
 {
@@ -68,6 +69,9 @@ public class TC05_Blog extends BaseClass
 			Assert.assertTrue(false);
 			logger.info("The Failure Comment not navigates correctly");
 		}
+		
+		PostComment pc=new PostComment(driver);
+		pc.clickBack();
 		
 		
 		

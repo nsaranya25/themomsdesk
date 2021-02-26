@@ -8,18 +8,21 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.mail.EmailException;
+
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
 
 public class Reporting extends TestListenerAdapter
 {
@@ -63,39 +66,65 @@ public class Reporting extends TestListenerAdapter
 	
 	public void onTestFailure(ITestResult tr)
 	{
+	//	BaseClass base=new BaseClass();
+	//	String screenshotpath=null;
+		
+		
 		logger=extent.createTest(tr.getName()); // create new entry in th report
 		logger.log(Status.FAIL,MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); // send the passed information to the report with GREEN color highlighted
+		System.out.println("method:"+tr.getMethod());
 		
 		int iend=tr.getMethod().toString().indexOf(".");
 		
-		String tcname=tr.getMethod().toString().substring(0, iend)+".png";
+		String tcname=tr.getMethod().toString().substring(0, iend);
 		
+		File directory= new File(System.getProperty("user.dir")+"\\test-output\\Screenshots");
+		File[] files=directory.listFiles(File::isFile);
+		long lastModifiedTime=Long.MIN_VALUE;
+		File chosenFile=null;
 		
-		String screenshotPath=System.getProperty("user.dir")+"\\test-output\\Screenshots\\" +tcname;
-		//String screenshotPath=".\\test-ouput\\Screenshots\\" +tcname;
-		System.out.println("Screenshotpath"+screenshotPath);
-		
-		File f = new File(screenshotPath); 
-		
-		if(f.exists())
+		if(files!=null && files.length>0)
 		{
-			
+			for(File file : files)
+			{
+				if(file.lastModified()> lastModifiedTime)
+				{
+					chosenFile=file;
+					lastModifiedTime=file.lastModified();
+				}
+			}
+		}
+		
+		System.out.println("screenshot file name:"+chosenFile);
+	
+		
+		//String screenshotpath=System.getProperty("user.dir")+"\\test-output\\Screenshots\\" +chosenFile;
+
+		//System.out.println("Screenshotpath"+screenshotpath);
+		
+		//File f = new File(chosenFile); 
+		
+		//if(f.exists())
+		//{
+			System.out.println(chosenFile.getAbsolutePath());
 		try {
-			logger.fail("Screenshot is below:");
-			logger.addScreenCaptureFromPath(screenshotPath);
+			logger.fail("Screenshot is below:");//, MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotpath).build());
+			logger.addScreenCaptureFromPath(chosenFile.getAbsolutePath());
+
+			
 			
 			} 
 		catch (IOException e) 
 				{
 				e.printStackTrace();
 				}
-		}
+		//}
 		System.out.println("failure");
 	}
 	
 	public void onTestSkipped(ITestResult tr)
 	{
-		logger=extent.createTest(tr.getName()); // create new entry in th report
+		logger=extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.SKIP,MarkupHelper.createLabel(tr.getName(),ExtentColor.ORANGE));
 		System.out.println("skipped");
 	}

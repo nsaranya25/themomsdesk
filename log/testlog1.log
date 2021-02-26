@@ -114,3 +114,72 @@
 2021-02-21 21:05:35,997 [main] INFO TheMomsDesk - The Blog page navigates correctly
 2021-02-21 21:05:37,005 [main] INFO TheMomsDesk - The Readmore navigates correctly
 2021-02-21 21:05:45,824 [main] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-22 10:11:24,589 [main] INFO TheMomsDesk - Contact Page link works fine
+2021-02-22 10:14:53,691 [main] INFO TheMomsDesk - The Automation link navigates correctly
+2021-02-22 10:15:32,141 [main] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-22 10:15:33,626 [main] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-22 10:15:41,183 [main] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-22 10:35:14,755 [main] INFO TheMomsDesk - URL is opened
+2021-02-22 10:36:16,721 [main] INFO TheMomsDesk - Contact Page link works fine
+2021-02-22 10:39:29,270 [main] INFO TheMomsDesk - The Automation link navigates correctly
+2021-02-22 10:41:03,693 [main] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-22 10:41:05,609 [main] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-22 10:41:25,311 [main] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-24 18:09:43,075 [main] INFO TheMomsDesk - Contact Page link works fine
+2021-02-24 18:13:36,082 [main] INFO TheMomsDesk - The Automation link navigates correctly
+2021-02-24 18:14:38,294 [main] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-24 18:14:44,108 [main] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-24 18:14:58,474 [main] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-25 17:46:51,670 [main] INFO TheMomsDesk - Contact Page link works fine
+2021-02-25 17:49:22,136 [main] INFO TheMomsDesk - The Automation link navigates correctly
+2021-02-25 17:49:54,016 [main] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-25 17:49:57,473 [main] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-25 17:50:00,251 [main] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-25 18:26:23,268 [main] INFO TheMomsDesk - URL is opened
+2021-02-25 18:29:16,368 [main] INFO TheMomsDesk - The Automation link navigates correctly
+2021-02-25 18:29:40,085 [main] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-25 18:29:47,973 [main] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-25 18:29:57,607 [main] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-25 18:44:04,620 [main] INFO TheMomsDesk - Contact Page link works fine
+2021-02-25 18:54:32,062 [main] INFO TheMomsDesk - URL is opened
+2021-02-25 19:17:17,901 [main] INFO TheMomsDesk - URL is opened
+2021-02-25 19:29:52,713 [main] INFO TheMomsDesk - Contact Page link works fine
+2021-02-25 19:32:28,956 [main] INFO TheMomsDesk - The Automation link navigates correctly
+2021-02-25 19:33:13,796 [main] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-25 19:33:17,338 [main] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-25 19:33:30,474 [main] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-25 20:46:04,528 [TestNG-tests-1] INFO TheMomsDesk - Contact Page link works fine
+2021-02-25 20:48:54,855 [TestNG-tests-1] INFO TheMomsDesk - The Automation link navigates correctly
+2021-02-25 20:49:21,114 [TestNG-tests-1] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-25 20:49:22,799 [TestNG-tests-1] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-25 20:49:26,820 [TestNG-tests-1] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-25 21:00:47,475 [main] INFO TheMomsDesk - URL is opened
+2021-02-25 21:01:02,847 [main] INFO TheMomsDesk - Contact Page link works fine
+2021-02-25 21:01:19,350 [main] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-25 21:01:25,975 [main] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-25 21:01:29,747 [main] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-25 22:59:03,104 [main] INFO TheMomsDesk - Contact Page link works fine
+2021-02-25 23:02:05,476 [main] INFO TheMomsDesk - URL is opened
+2021-02-25 23:02:30,992 [main] INFO TheMomsDesk - Contact Page link works fine
+2021-02-25 23:02:47,258 [main] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-25 23:03:07,331 [main] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-25 23:03:12,481 [main] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-26 08:41:18,315 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - URL is opened
+2021-02-26 08:41:30,470 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - Contact Page link works fine
+2021-02-26 08:41:40,845 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-26 08:41:44,340 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-26 08:41:48,047 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-26 08:50:36,801 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - URL is opened
+2021-02-26 08:50:50,031 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - Contact Page link works fine
+2021-02-26 08:51:12,961 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-26 08:51:28,115 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-26 08:51:32,362 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - The Failure Comment navigates correctly
+2021-02-26 09:06:51,481 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - URL is opened
+2021-02-26 09:07:11,109 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - Contact Page link works fine
+2021-02-26 09:07:38,067 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - The Automation link navigates correctly
+2021-02-26 09:13:37,256 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - URL is opened
+2021-02-26 09:13:46,442 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - Contact Page link works fine
+2021-02-26 09:14:08,654 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - The Automation link navigates correctly
+2021-02-26 09:14:12,568 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - The Blog page navigates correctly
+2021-02-26 09:14:15,180 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - The Readmore navigates correctly
+2021-02-26 09:14:23,121 [TestNG-test=TheMomDesk Test-1] INFO TheMomsDesk - The Failure Comment navigates correctly

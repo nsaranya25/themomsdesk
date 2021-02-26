@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="themomdesk">
+<suite name="themomdesk" verbose="10">
 	<listeners>
 		<listener class-name="com.themomsdesk.utilities.Reporting"/>
 	
 	</listeners>
 
 
-	<test name="TheMomDesk Test">
+	<test name="TheMomDesk Test" thread-count="1" parallel="classes" preserve-order="true">
 		<parameter name="browser" value="chrome"/>
 		<classes>
-			
-			
 			<class name="com.themomsdesk.testCases.TC01_CareerPage"/>
 			<class name="com.themomsdesk.testCases.TC02_ContactPage"/>
 			<class name="com.themomsdesk.testCases.TC03_ContactPageForm"/>
 			<class name="com.themomsdesk.testCases.TC04_Automation_Testing"/>
 			<class name="com.themomsdesk.testCases.TC05_Blog"/>
+			<class name="com.themomsdesk.testCases.TC06_ContactFormInvalidData"/>
 			
 			
 		</classes>

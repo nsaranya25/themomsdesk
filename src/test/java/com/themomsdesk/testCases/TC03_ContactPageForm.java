@@ -11,7 +11,7 @@ import com.themomsdesk.pageObjects.HomePage;
 public class TC03_ContactPageForm extends BaseClass
 {
 	@Test
-	public void testContactPage() throws IOException,InterruptedException
+	public void testContactPageForm() throws IOException,InterruptedException
 	{
 		HomePage hp3=new HomePage(driver);
 		hp3.contactPage();

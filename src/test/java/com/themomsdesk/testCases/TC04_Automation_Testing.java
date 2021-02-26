@@ -1,6 +1,7 @@
 package com.themomsdesk.testCases;
 
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.Set;
 
 import org.testng.Assert;
@@ -13,25 +14,41 @@ public class TC04_Automation_Testing extends BaseClass
 	@Test
 	public void testAtutomationTesting() throws InterruptedException, IOException
 	{
-		System.out.println("url");
+		
 		HomePage hp4=new HomePage(driver);
-		System.out.println("click");
+		hp4.gohomePage();
+		
 		hp4.clickAutomation();
 		String winHandle;
-		String firstWinHandle;
-		String secondWinHandle;
+		String parent=driver.getWindowHandle();
+		
 		Thread.sleep(5000);
 		Set<String> handles = driver.getWindowHandles();
-		firstWinHandle = driver.getWindowHandle();
-		handles.remove(firstWinHandle);
+		Iterator<String> I1=handles.iterator();
+		String child_title=null;
+		while(I1.hasNext())
+		{
+			String child_window=I1.next();
+			if(!parent.equals(child_window))
+			{
+				child_title=driver.switchTo().window(child_window).getTitle();
+				driver.close();
+				
+			}
+		}
+		driver.switchTo().window(parent);
+		
+		
+		/*firstWinHandle = driver.getWindowHandle();
+		//handles.remove(firstWinHandle);
 		winHandle= handles.iterator().next();
 		if(winHandle!= firstWinHandle)
 		{
 			secondWinHandle = winHandle;
 			driver.switchTo().window(secondWinHandle);
 		}
-		System.out.println("get title of driver:"+driver.getTitle());
-		if(driver.getTitle().equals("Services – Business 4"))
+		System.out.println("get title of driver:"+driver.getTitle());*/
+		if(child_title.equals("Services – Business 4"))
 		{
 			Assert.assertTrue(true);
 			logger.info("The Automation link navigates correctly");
@@ -43,6 +60,8 @@ public class TC04_Automation_Testing extends BaseClass
 			logger.info("The Automation link not navigates correctly");
 		}
 		
+		//driver.close();
+		//driver.switchTo().window(firstWinHandle);
 		
 	}
 }

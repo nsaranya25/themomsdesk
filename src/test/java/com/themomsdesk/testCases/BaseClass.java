@@ -1,7 +1,10 @@
 package com.themomsdesk.testCases;
 
 import java.io.File;
+
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.mail.EmailException;
@@ -15,7 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
 import com.themomsdesk.utilities.ReadConfig;
-import com.themomsdesk.utilities.SendMail;
+
 
 
 public class BaseClass {
@@ -28,7 +31,7 @@ public class BaseClass {
 	public static Logger logger;
 
 	@Parameters("browser")
-	@BeforeClass
+	@BeforeTest
 	public void setup(String br) 
 	{
 		
@@ -54,7 +57,7 @@ public class BaseClass {
 		
 	}
 	
-	@AfterClass
+	@AfterTest
 	public void tearDown() throws EmailException
 	{
 		
@@ -66,12 +69,16 @@ public class BaseClass {
 	
 	public void captureScreen(WebDriver driver, String tname) throws IOException
 	{
+		
 		TakesScreenshot ts= (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		File target = new File(System.getProperty("user.dir")+"./test-output/Screenshots/"+tname+".png");
+		String time = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		System.out.println(System.getProperty("user.dir")+"\\test-output\\Screenshots\\"+tname+time+".png");
+		
+		File target = new File(System.getProperty("user.dir")+"\\test-output\\Screenshots\\"+tname+time+".png");
 		FileUtils.copyFile(source, target);
 		System.out.println("Screenshot taken");
-		
+
 	}
 
 }

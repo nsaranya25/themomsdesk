@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">9 methods, 6 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,32 @@
                     <div class="method-list-content failed suite-themomdesk">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-themomdesk" title="com.themomsdesk.testCases.TC06_ContactFormInvalidData" class="method navigator-link" hash-for-method="contactFormInvalidData(Raj, , )">contactFormInvalidData(Raj, , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-themomdesk" title="com.themomsdesk.testCases.TC06_ContactFormInvalidData" class="method navigator-link" hash-for-method="contactFormInvalidData(, abc@gmail.com, Hi this is Biel)">contactFormInvalidData(, abc@gmail.com, Hi this is Biel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-themomdesk" title="com.themomsdesk.testCases.TC06_ContactFormInvalidData" class="method navigator-link" hash-for-method="contactFormInvalidData(Biel, asdf.com, )">contactFormInvalidData(Biel, asdf.com, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-themomdesk" title="com.themomsdesk.testCases.TC06_ContactFormInvalidData" class="method navigator-link" hash-for-method="contactFormInvalidData(Biel, , Hi this is Biel)">contactFormInvalidData(Biel, , Hi this is Biel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-themomdesk" title="com.themomsdesk.testCases.TC01_CareerPage" class="method navigator-link" hash-for-method="testCareerText">testCareerText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-themomdesk" title="com.themomsdesk.testCases.TC03_ContactPageForm" class="method navigator-link" hash-for-method="testContactPage">testContactPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-themomdesk" title="com.themomsdesk.testCases.TC03_ContactPageForm" class="method navigator-link" hash-for-method="testContactPageForm">testContactPageForm</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-themomdesk -->
@@ -158,8 +178,25 @@
                   </a> <!-- testCareerText -->
                   <span class="method-name">testCareerText</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
 	at com.themomsdesk.testCases.TC01_CareerPage.testCareerText(TC01_CareerPage.java:34)
-... Removed 29 stack frames
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -173,32 +210,158 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testContactPage">
-                  </a> <!-- testContactPage -->
-                  <span class="method-name">testContactPage</span>
+                  <a name="testContactPageForm">
+                  </a> <!-- testContactPageForm -->
+                  <span class="method-name">testContactPageForm</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.themomsdesk.testCases.TC03_ContactPageForm.testContactPage(TC03_ContactPageForm.java:49)
-... Removed 29 stack frames
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.themomsdesk.testCases.TC03_ContactPageForm.testContactPageForm(TC03_ContactPageForm.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-themomdesk-class-failed -->
-          <div class="suite-themomdesk-class-passed">
+          <div class="suite-themomdesk-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.themomsdesk.testCases.TC02_ContactPage</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.themomsdesk.testCases.TC06_ContactFormInvalidData</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testContactPage">
-                  </a> <!-- testContactPage -->
-                  <span class="method-name">testContactPage</span>
+                  <a name="contactFormInvalidData(Raj, , )">
+                  </a> <!-- contactFormInvalidData(Raj, , ) -->
+                  <span class="method-name">contactFormInvalidData</span>
+                  <span class="parameters">(Raj, , )</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.themomsdesk.testCases.TC06_ContactFormInvalidData.contactFormInvalidData(TC06_ContactFormInvalidData.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactFormInvalidData(, abc@gmail.com, Hi this is Biel)">
+                  </a> <!-- contactFormInvalidData(, abc@gmail.com, Hi this is Biel) -->
+                  <span class="method-name">contactFormInvalidData</span>
+                  <span class="parameters">(, abc@gmail.com, Hi this is Biel)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.themomsdesk.testCases.TC06_ContactFormInvalidData.contactFormInvalidData(TC06_ContactFormInvalidData.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactFormInvalidData(Biel, asdf.com, )">
+                  </a> <!-- contactFormInvalidData(Biel, asdf.com, ) -->
+                  <span class="method-name">contactFormInvalidData</span>
+                  <span class="parameters">(Biel, asdf.com, )</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.themomsdesk.testCases.TC06_ContactFormInvalidData.contactFormInvalidData(TC06_ContactFormInvalidData.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactFormInvalidData(Biel, , Hi this is Biel)">
+                  </a> <!-- contactFormInvalidData(Biel, , Hi this is Biel) -->
+                  <span class="method-name">contactFormInvalidData</span>
+                  <span class="parameters">(Biel, , Hi this is Biel)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.themomsdesk.testCases.TC06_ContactFormInvalidData.contactFormInvalidData(TC06_ContactFormInvalidData.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-themomdesk-class-passed -->
+          </div> <!-- suite-themomdesk-class-failed -->
           <div class="suite-themomdesk-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -210,6 +373,21 @@
                   <a name="testAtutomationTesting">
                   </a> <!-- testAtutomationTesting -->
                   <span class="method-name">testAtutomationTesting</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-themomdesk-class-passed -->
+          <div class="suite-themomdesk-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.themomsdesk.testCases.TC02_ContactPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContactPage">
+                  </a> <!-- testContactPage -->
+                  <span class="method-name">testContactPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -238,11 +416,11 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;themomdesk&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;themomdesk&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.themomsdesk.utilities.Reporting&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;TheMomDesk Test&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;TheMomDesk Test&quot; verbose=&quot;10&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.themomsdesk.testCases.TC01_CareerPage&quot;/&gt;
@@ -250,6 +428,7 @@
       &lt;class name=&quot;com.themomsdesk.testCases.TC03_ContactPageForm&quot;/&gt;
       &lt;class name=&quot;com.themomsdesk.testCases.TC04_Automation_Testing&quot;/&gt;
       &lt;class name=&quot;com.themomsdesk.testCases.TC05_Blog&quot;/&gt;
+      &lt;class name=&quot;com.themomsdesk.testCases.TC06_ContactFormInvalidData&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TheMomDesk Test --&gt;
 &lt;/suite&gt; &lt;!-- themomdesk --&gt;
@@ -263,7 +442,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TheMomDesk Test (5 classes)</span>
+                <span class="test-name">TheMomDesk Test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -289,27 +468,43 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testAtutomationTesting')
-data.setCell(0, 2, 'com.themomsdesk.testCases.TC04_Automation_Testing')
-data.setCell(0, 3, 14536);
+data.setCell(0, 1, 'testBlog')
+data.setCell(0, 2, 'com.themomsdesk.testCases.TC05_Blog')
+data.setCell(0, 3, 15375);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testContactPage')
-data.setCell(1, 2, 'com.themomsdesk.testCases.TC02_ContactPage')
-data.setCell(1, 3, 14170);
+data.setCell(1, 1, 'testAtutomationTesting')
+data.setCell(1, 2, 'com.themomsdesk.testCases.TC04_Automation_Testing')
+data.setCell(1, 3, 13248);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testBlog')
-data.setCell(2, 2, 'com.themomsdesk.testCases.TC05_Blog')
-data.setCell(2, 3, 12645);
+data.setCell(2, 1, 'testContactPageForm')
+data.setCell(2, 2, 'com.themomsdesk.testCases.TC03_ContactPageForm')
+data.setCell(2, 3, 8934);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testContactPage')
-data.setCell(3, 2, 'com.themomsdesk.testCases.TC03_ContactPageForm')
-data.setCell(3, 3, 11986);
+data.setCell(3, 1, 'contactFormInvalidData')
+data.setCell(3, 2, 'com.themomsdesk.testCases.TC06_ContactFormInvalidData')
+data.setCell(3, 3, 5078);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testCareerText')
 data.setCell(4, 2, 'com.themomsdesk.testCases.TC01_CareerPage')
-data.setCell(4, 3, 7689);
+data.setCell(4, 3, 4842);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'contactFormInvalidData')
+data.setCell(5, 2, 'com.themomsdesk.testCases.TC06_ContactFormInvalidData')
+data.setCell(5, 3, 4449);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testContactPage')
+data.setCell(6, 2, 'com.themomsdesk.testCases.TC02_ContactPage')
+data.setCell(6, 3, 4269);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'contactFormInvalidData')
+data.setCell(7, 2, 'com.themomsdesk.testCases.TC06_ContactFormInvalidData')
+data.setCell(7, 3, 4171);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'contactFormInvalidData')
+data.setCell(8, 2, 'com.themomsdesk.testCases.TC06_ContactFormInvalidData')
+data.setCell(8, 3, 3908);
 window.suiteTableData['themomdesk']= { tableData: data, tableDiv: 'times-div-themomdesk'}
 return data;
 }
@@ -329,9 +524,54 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-themomdesk" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.themomsdesk.testCases.TC04_Automation_Testing</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.themomsdesk.testCases.TC03_ContactPageForm</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.themomsdesk.testCases.TC02_ContactPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.themomsdesk.testCases.TC06_ContactFormInvalidData</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.themomsdesk.testCases.TC05_Blog</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-themomdesk" class="panel">
@@ -341,82 +581,80 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.themomsdesk.testCases.TC01_CareerPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="configuration-test before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCareerText</span>
-                <span class="method-start">69564 ms</span>
+                <span class="method-start">83713 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">77763 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.themomsdesk.testCases.TC02_ContactPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">88575 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testContactPage</span>
-                <span class="method-start">109800 ms</span>
+                <span class="method-start">88762 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">123975 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.themomsdesk.testCases.TC03_ContactPageForm</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">127413 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testContactPage</span>
-                <span class="method-start">140205 ms</span>
+                <span class="method-name">testContactPageForm</span>
+                <span class="method-start">93039 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">152201 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.themomsdesk.testCases.TC04_Automation_Testing</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">161716 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testAtutomationTesting</span>
-                <span class="method-start">195576 ms</span>
+                <span class="method-start">101994 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">210115 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.themomsdesk.testCases.TC05_Blog</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">222795 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testBlog</span>
-                <span class="method-start">241449 ms</span>
+                <span class="method-start">115245 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.themomsdesk.testCases.TC06_ContactFormInvalidData</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">contactFormInvalidData(Biel, asdf.com, )</span>
+                <span class="method-start">166032 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">contactFormInvalidData(Biel, , Hi this is Biel)</span>
+                <span class="method-start">171132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">contactFormInvalidData(, abc@gmail.com, Hi this is Biel)</span>
+                <span class="method-start">175319 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">contactFormInvalidData(Raj, , )</span>
+                <span class="method-start">179247 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.themomsdesk.testCases.TC01_CareerPage</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">254098 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">183706 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
